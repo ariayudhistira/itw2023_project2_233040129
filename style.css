@@ -1,0 +1,299 @@
+:root{
+--pink:#e84393;
+
+
+}
+
+
+*{
+    margin:0;padding:0;
+ box-sizing: border-box;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+outline: none;border: none;
+text-decoration: none;
+text-transform: capitalize;
+transition: .2s linear;
+
+}
+html {
+    font-size: 62.5%;
+scroll-behavior: smooth;
+scroll-padding-top: 6rem;
+overflow-x:hidden;
+
+
+}
+
+section{
+    padding:2rem 9% ;
+}
+.btn{
+    display: inline-block;
+    margin-top: 50rem;
+    margin-left: 5rem;
+    border-radius: 5rem;
+    background: #929191;
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+
+
+}
+
+.btn:hover{
+
+    background: var(--pink);
+}
+
+header{
+position: fixed;
+    top:0; left:0; right:0;
+    background:b;
+    padding:2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    
+
+
+}
+
+header .logo{
+    font-size: 3rem;
+    color: #333;
+font-weight: bolder;
+}
+
+header .logo span {
+color:var(--pink);
+    
+}
+header .navbar a{
+font-size: 2rem;
+padding: 0 1.5rem;
+color: #1b1212;
+}
+
+header .navbar a:hover{
+    color:var(--pink);
+}
+
+header .icons a{
+    font-size: 2.5rem;
+    color:#333;
+    margin-left: 1.5rem;
+    
+}
+
+header .icons a:hover{
+    color:var(--pink);
+}
+header #toggler{
+
+    display: none;
+}
+header .fa-bars{
+font-size: 3rem;
+color: #333;
+border-radius: .5rem;
+padding:.5rem 1.5rem;
+cursor: pointer;
+border: .1rem solid rgba(0,0,0,.3);
+display:none ;
+
+}
+
+.home{
+display: flex;
+align-items: center;
+min-height: 100vh;
+background: url(/images/baru.jpg) no-repeat;
+background-size: cover;
+background-position: center;
+
+}
+
+.home .content{
+    max-width: 50rem;
+}
+
+.home .content h3{
+font-size:6rem;
+color:#333
+
+}
+
+.home .content span{
+font-size: 3.5rem;
+color:var(--pink);
+padding: 1rem 0;
+line-height: 1.5
+}
+
+
+.home .content p{
+    font-size: 1.5rem;
+    color: #999;
+    padding: 1rem 0;
+    line-height: 1.5
+    }
+
+    #about .arip {
+        margin-top: 100px;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+
+    .home{
+        background-position: left;
+    }
+
+}
+
+@media (max-width:768px){
+
+    header .fa-bars{
+        display: block;
+    }
+    header .navbar{
+    position:absolute;
+    top:100%; left:0; right:0;
+    background:black;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+     } 
+header #toggler:checked ~ .navbar {
+    clip-path: polygon(0 0, 100% 0, 100% 100%,0% 100%);
+}
+
+header.navbar a{
+    margin: 1.5rem;
+    padding: 1.5rem;
+    background:black;
+    border:.1rem solid rgba(0,0,0,.1 );
+    display: block;
+}
+
+.home .content h3{
+    font-size: 5rem;
+}
+
+.home .content span{
+    font-size: 2.5rem;
+}
+}
+
+
+
+@media (max-width:450px) {
+
+    html {
+        font-size: 50%;
+         }
+
+    }
+
+
+
+    .about{
+
+    min-height: 100vh;
+    background-color:rgb(244, 99, 218);
+    }
+
+
+
+    .newarrival-img span {
+        top: 20px;
+        right: 20px;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+      }
+      .newarrival-img img {
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+      }
+      .newarrival-img:hover img {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+      }
+      #contact .container {
+        padding: 70px 0;
+      }
+      
+      #contact h3 {
+        font-size: 35px;
+        color: #4d4d4d;
+        line-height: 38px;
+        width: 350px;
+      }
+      
+      .kontak h6 {
+        color: rgb(34, 34, 34);
+        line-height: 25px;
+        margin: 10px 0;
+      }
+      
+      .kontak a {
+        color: #2f2e2e;
+        text-decoration: none;
+        margin-left: 7px;
+      }
+      .kontak .icon:hover {
+        color: #f3f0f0;
+      }
+      
+      .card-contact {
+        width: 100%;
+        height: 380px;
+        background-color: #9fa1a3;
+        border-radius: 20px;
+        padding: 50px;
+      }
+      
+      .card-contact h2 {
+        color: rgb(68, 69, 69);
+        line-height: 30px;
+        margin-bottom: 20px;
+      }
+      
+      .form-floating {
+        border-radius: 10px;
+      }
+      
+      .button-kontak {
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+        background-color: rgb(210, 208, 208);
+      }
+      
